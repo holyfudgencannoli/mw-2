@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: flask-app
-    env: python
+    name: flask-backend
+    runtime: python
     buildCommand: ""
     startCommand: gunicorn main:app --bind 0.0.0.0:$PORT
     envVars:
